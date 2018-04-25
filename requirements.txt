@@ -7,3 +7,4 @@ pytz==2017.2
 whitenoise==3.3.0
 dj-static
 static3
+mysqlclient
