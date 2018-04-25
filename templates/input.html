@@ -28,12 +28,12 @@
 <body>
     <meta charset="UTF-8">
     <title>Enter your text</title>
-    {% load bootstrap %}
+
     {% block content %}
         <div class="form-group" style="width:80%">
             <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            {{ input_form | bootstrap_horizontal:'col-lg-2 col-sm-2'}}
+            {{ input_form.as_p}}
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
