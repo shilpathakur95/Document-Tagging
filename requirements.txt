@@ -13,4 +13,3 @@ bs4
 numpy
 nltk
 lxml
-re
