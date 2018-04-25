@@ -9,3 +9,4 @@ dj-static
 static3
 mysqlclient
 six
+bs4
