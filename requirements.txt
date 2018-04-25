@@ -10,3 +10,8 @@ static3
 mysqlclient
 six
 bs4
+numpy
+nltk
+urllib
+lxml
+re

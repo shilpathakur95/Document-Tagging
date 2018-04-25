@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 import sys
 import testApp.processing as process
-import lxml
+
 import re
 from lxml.html.clean import Cleaner
 cleaner = Cleaner()

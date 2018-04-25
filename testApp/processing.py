@@ -8,11 +8,10 @@ django.setup()
 import rake
 from testApp.models import *
 import numpy as np
-import re
+
 from nltk.stem.porter import *
 stemmer=PorterStemmer()
-import os
-from celery import task
+
 
 
 
