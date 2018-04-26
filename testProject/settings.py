@@ -27,7 +27,7 @@ SECRET_KEY = '@o!-(doxtbk5oz(e5hkmd&9m_u9ad1(2&xrilxkt)g@lngl_1)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://documenttagging.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
