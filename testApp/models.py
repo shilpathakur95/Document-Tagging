@@ -8,7 +8,7 @@ class OverwriteStorage(FileSystemStorage):
 
     def get_available_name(self, name,max_length):
         if self.exists(name):
-            os.remove(os.path.join(settings.MEDIA_ROOT, name))
+            os.remove(os.path.join(settings.MEDIA_DIR, name))
         return name
 
 class Topics(models.Model):
@@ -16,7 +16,7 @@ class Topics(models.Model):
     cutoff_25 = models.FloatField()
     cutoff_50 = models.FloatField()
     cutoff_75  = models.FloatField()
-    data = models.FileField(upload_to=settings.MEDIA_ROOT,storage=OverwriteStorage())
+    data = models.FileField(upload_to='uploads',storage=OverwriteStorage())
 
     def __unicode__(self):
         return self.topic
