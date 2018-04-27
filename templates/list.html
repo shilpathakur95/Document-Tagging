@@ -60,8 +60,8 @@
                 <td>{{ rest.cutoff_50 }}</td>
                 <td>{{ rest.cutoff_75 }}</td>
                 <td>{{ rest.data }}</td>
-            <td><button class="btn btn-primary" id="edit" onclick="location.href='/doctag/topics/{{ rest.id }}/update/'">Edit</button></td>
-            <td><button class="glyphicon glyphicon-remove btn-danger" id="delete" onclick="location.href='/doctag/topics/{{ rest.id }}/delete/'"></button></td>
+            <td><button class="btn btn-primary" id="edit" onclick="location.href='/doctag/topics/{{ rest.topic }}/update/'">Edit</button></td>
+            <td><button class="glyphicon glyphicon-remove btn-danger" id="delete" onclick="location.href='/doctag/topics/{{ rest.topic }}/delete/'"></button></td>
             </tr>
           {% endfor %}
           </tbody>

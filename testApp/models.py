@@ -12,7 +12,7 @@ class OverwriteStorage(FileSystemStorage):
         return name
 
 class Topics(models.Model):
-    topic = models.CharField(max_length=100)
+    topic = models.CharField(max_length=100,primary_key=True)
     cutoff_25 = models.FloatField()
     cutoff_50 = models.FloatField()
     cutoff_75  = models.FloatField()
