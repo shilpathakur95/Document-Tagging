@@ -64,7 +64,6 @@ def get_probability(text,topic):
     text=stem_text(text)
     result={}
     base = Topics.objects.all()
-    total_topics=len(base)
 
     i=1
     for b in base:

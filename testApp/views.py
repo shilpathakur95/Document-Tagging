@@ -79,7 +79,11 @@ def enter_text(request):
         topic = request.POST.get('input_class')
         result,keywords = process.get_probability(text,topic)
         input_instance=input_form.save(commit=False)
-        input_instance.probability=result[topic][0]
+        p_class=""
+        for key,value in result:
+            if value[0]==1:
+                p_class= p_class+key+","
+        input_instance.predicted_class=p_class
         input_instance.confidence_score = result[topic][1]
         input_instance.prediction_machine_id=1
         input_instance.prediction_machine_version=1.0
@@ -91,3 +95,9 @@ def enter_text(request):
         input_form=InputForm()
     return HttpResponse(template.render(context={'input_form': input_form},
                                          request=request))
+
+def view_topics(request):
+    list = Topics.objects.all()
+    template=get_template("list.html")
+    return HttpResponse(template.render(context={'list': list},
+                                        request=request))

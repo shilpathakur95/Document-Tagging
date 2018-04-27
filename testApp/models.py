@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.db import models
 
 class Topics(models.Model):
-    topic = models.CharField(max_length=100,primary_key=True)
+    topic = models.CharField(max_length=100)
     cutoff_25 = models.FloatField()
     cutoff_50 = models.FloatField()
     cutoff_75  = models.FloatField()
@@ -11,6 +11,9 @@ class Topics(models.Model):
 
     def __unicode__(self):
         return self.topic
+
+    class Meta:
+        ordering = ('topic',)
 
 
 class Input(models.Model):
