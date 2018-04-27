@@ -1,13 +1,25 @@
 from __future__ import unicode_literals
-
+from django.conf import settings
+from django.core.files.storage import FileSystemStorage
+import os
 from django.db import models
+
+class OverwriteStorage(FileSystemStorage):
+    '''
+    Muda o comportamento padrão do Django e o faz sobrescrever arquivos de
+    mesmo nome que foram carregados pelo usuário ao invés de renomeá-los.
+    '''
+    def get_available_name(self, name):
+        if self.exists(name):
+            os.remove(os.path.join(settings.MEDIA_ROOT, name))
+        return name
 
 class Topics(models.Model):
     topic = models.CharField(max_length=100)
     cutoff_25 = models.FloatField()
     cutoff_50 = models.FloatField()
     cutoff_75  = models.FloatField()
-    data = models.FileField(upload_to='uploads/')
+    data = models.FileField(upload_to='uploads/',storage=OverwriteStorage())
 
     def __unicode__(self):
         return self.topic

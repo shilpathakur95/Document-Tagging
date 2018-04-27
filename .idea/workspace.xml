@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09b37b4a-fbfd-418c-9b1d-a567fbe1cc1b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/uploads/C_programming_all_passed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/uploads/Digital_marketing_all_passed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/uploads/Java_programming_all_passed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/uploads/Sales_all_passed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testApp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/testApp/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testApp/migrations/0002_auto_20180419_1438.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testApp/migrations/0003_auto_20180419_1620.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/testApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testApp/processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testApp/processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/testApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testApp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -130,14 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testApp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -181,10 +166,10 @@
         <option value="$PROJECT_DIR$/testApp/classviews.py" />
         <option value="$PROJECT_DIR$/media/testProject/topics_confirm_delete.html" />
         <option value="$PROJECT_DIR$/media/testProject/topics_form.html" />
-        <option value="$PROJECT_DIR$/testApp/models.py" />
         <option value="$PROJECT_DIR$/testProject/settings.py" />
         <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/testApp/urls.py" />
+        <option value="$PROJECT_DIR$/testApp/models.py" />
       </list>
     </option>
   </component>
@@ -257,15 +242,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shithaku\PycharmProjects\testProject\templates" />
+      <recent name="C:\Users\shithaku\PycharmProjects\testProject\testProject" />
+      <recent name="C:\Users\shithaku\PycharmProjects\testProject\testApp" />
+      <recent name="C:\Users\shithaku\PycharmProjects\testProject\apps" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shithaku\PycharmProjects\testProject" />
       <recent name="C:\Users\shithaku\PycharmProjects\testProject\static" />
       <recent name="C:\Users\shithaku\PycharmProjects\testProject\media\uploads" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\shithaku\PycharmProjects\testProject\testProject" />
-      <recent name="C:\Users\shithaku\PycharmProjects\testProject\testApp" />
-      <recent name="C:\Users\shithaku\PycharmProjects\testProject\apps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -418,8 +404,8 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25097734" />
-      <window_info active="true" anchor="bottom" id="manage.py@testProject" order="7" visible="true" weight="0.3850085" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25097734" />
+      <window_info anchor="bottom" id="manage.py@testProject" order="7" visible="true" weight="0.3850085" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -766,16 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testApp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -800,6 +776,13 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
