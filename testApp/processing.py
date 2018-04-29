@@ -64,7 +64,7 @@ def get_probability(text,topic):
     text=stem_text(text)
     result={}
     base = Topics.objects.all()
-
+    passed =""
     i=1
     for b in base:
 
@@ -80,8 +80,9 @@ def get_probability(text,topic):
         sim=getSimilarity(dict(base_keywords),dict(text_keywords))
         if sim>=cutoff_25:
             result[topic] = (1,sim)
+            passed= passed + topic + ","
         else:
             result[topic] = (0, sim)
-    return result,dict(text_keywords)
+    return result,dict(text_keywords),passed
 
 #print(get_probability("Java is cool","C++ programming"))

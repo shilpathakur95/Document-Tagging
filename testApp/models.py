@@ -36,9 +36,10 @@ class Input(models.Model):
     input_datetime = models.DateTimeField(auto_now=True)
     predicted_class = models.CharField(max_length=500)
     confidence_score = models.FloatField()
+    similarity = models.FloatField()
     prediction_machine_id = models.FloatField()
     prediction_machine_version = models.FloatField()
-    prediction_machine_verison_deploy_date = models.DateField()
+    prediction_machine_deploy_date = models.DateField()
 
     def __unicode__(self):
         return '%s %s %s' % (self.input_class, self.input_content_type,self.input_content)

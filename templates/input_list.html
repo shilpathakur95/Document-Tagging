@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+</head>
+<body>
+{%  if list %}
+
+
+
+ <table class="table table-hover table-bordered" id="xyz">
+ <tr>
+        <th>Class</th>
+        <th>Content type</th>
+        <th>Content</th>
+        <th>Datetime<th>
+        <th>Predicted class</th>
+        <th>Conf score</th>
+        <th>Machine id</th>
+        <td>Machine version</td>
+        <td>Deploy date</td>
+ </tr>
+          <tbody>
+          {% for rest in list %}
+            <tr>
+             <td>{{ rest.input_class }}</td>
+             <td>{{ rest.input_content_type }}</td>
+                <td>{{ rest.input_content }}</td>
+                <td>{{ rest.input_datetime }}</td>
+                <td>{{ rest.predicted_class }}</td>
+            <td>{{ rest.confidence_score }}</td>
+            <td>{{ rest.prediction_machine_id }}</td>
+            <td>{{ rest.prediction_machine_version }}</td>
+            <td> {{ rest.prediction_machine_deploy_date }}</td>
+            </tr>
+
+          {% endfor %}
+          </tbody>
+</table>
+{% else %}
+  No Food Items. Please add an Item.<br>
+  {% endif %}
+</body>
+</html>

@@ -77,17 +77,14 @@ def enter_text(request):
         else:
             text = request.POST.get('input_content')
         topic = request.POST.get('input_class')
-        result,keywords = process.get_probability(text,topic)
+        result,keywords,p_class = process.get_probability(text,topic)
         input_instance=input_form.save(commit=False)
-        p_class=""
-        for key,value in result:
-            if value[0]==1:
-                p_class= p_class+key+","
         input_instance.predicted_class=p_class
-        input_instance.confidence_score = result[topic][1]
+        input_instance.confidence_score = result[topic][0]
+        input_instance.similarity = result[topic][1]
         input_instance.prediction_machine_id=1
         input_instance.prediction_machine_version=1.0
-        input_instance.prediction_machine_verison_deploy_date='2018-04-24'
+        input_instance.prediction_machine_deploy_date='2018-04-24'
         input_instance.save()
         return HttpResponse(template2.render(context={'list': result , 'keywords': keywords},
                                          request=request))
@@ -99,5 +96,11 @@ def enter_text(request):
 def view_topics(request):
     list = Topics.objects.all()
     template=get_template("list.html")
+    return HttpResponse(template.render(context={'list': list},
+                                        request=request))
+
+def view_input(request):
+    list = Input.objects.all()
+    template = get_template("input_list.html")
     return HttpResponse(template.render(context={'list': list},
                                         request=request))
