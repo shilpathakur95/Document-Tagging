@@ -42,7 +42,7 @@ class Input(models.Model):
     prediction_machine_deploy_date = models.DateField()
 
     def __unicode__(self):
-        return '%s %s %s' % (self.input_class, self.input_content_type,self.input_content)
+        return '%s %s %s' % (self.input_class, self.input_content_type , self.input_content)
 
     class Meta:
         ordering = ('input_class',)
