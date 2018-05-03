@@ -48,27 +48,27 @@
         <th>Class</th>
         <th>Content type</th>
         <th>Content</th>
-        <th>Datetime<th>
+        <th>Datetime</th>
         <th>Predicted class</th>
         <th>Conf score</th>
         <th>Similarity</th>
         <th>Machine id</th>
-        <td>Machine version</td>
-        <td>Deploy date</td>
+        <th>Machine version</th>
+        <th>Deploy date</th>
  </tr>
           <tbody>
           {% for rest in list %}
             <tr>
-             <td>{{ rest.input_class }}</td>
-             <td>{{ rest.input_content_type }}</td>
+                <td>{{ rest.input_class }}</td>
+                <td>{{ rest.input_content_type }}</td>
                 <td>{{ rest.input_content }}</td>
                 <td>{{ rest.input_datetime }}</td>
                 <td>{{ rest.predicted_class }}</td>
-            <td>{{ rest.confidence_score }}</td>
+                <td>{{ rest.confidence_score }}</td>
                 <td>{{ rest.similarity }}</td>
-            <td>{{ rest.prediction_machine_id }}</td>
-            <td>{{ rest.prediction_machine_version }}</td>
-            <td> {{ rest.prediction_machine_deploy_date }}</td>
+                <td>{{ rest.prediction_machine_id }}</td>
+                <td>{{ rest.prediction_machine_version }}</td>
+                <td> {{ rest.prediction_machine_deploy_date }}</td>
             </tr>
 
           {% endfor %}
