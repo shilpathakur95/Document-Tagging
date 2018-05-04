@@ -103,4 +103,4 @@ def view_input(request):
     list_input = Input.objects.all()
     template = get_template("input_list.html")
     return HttpResponse(template.render(context={'list': list_input},
-                                        request=request))
+                                        request=request),pagination=False)
