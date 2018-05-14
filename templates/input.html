@@ -13,9 +13,11 @@
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDDQcWGMcncP9oCaH3rSJnVJIY9S3KcCq0"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <style type="text/css">
-    .container{
-    	margin: 20px;
-    }
+    .centered {
+  position: fixed; /* or absolute */
+  top: 40%;
+  left: 30%;
+}
 
 </style>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -27,7 +29,8 @@
 </head>
 <body>
     <meta charset="UTF-8">
-    <title>Enter your text</title>
+    <div class="centered">
+    <h1 style="color:darkslategrey;">Document classification</h1>
 
     {% block content %}
         <div class="form-group" style="width:80%">
@@ -40,7 +43,7 @@
 
 
 {% endblock %}
-
+</div>
 </body>
 
 </html>
