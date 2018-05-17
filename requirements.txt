@@ -16,3 +16,4 @@ lxml
 djangorestframework
 boto
 boto3
+django-storages
