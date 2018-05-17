@@ -3,15 +3,16 @@ from bs4 import BeautifulSoup
 import csv
 import os
 import django
+import testProject.settings
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "testProject.settings")
 django.setup()
 import rake
 from testApp.models import *
 import numpy as np
-
+import pandas as pd
 from nltk.stem.porter import *
 stemmer=PorterStemmer()
-
+from django.core.files.storage import default_storage
 
 
 
@@ -72,9 +73,11 @@ def get_probability(text,topic):
         cutoff_25=b.cutoff_25
         cutoff_75=b.cutoff_75
         cutoff_50=b.cutoff_50
-        csv_file = csv.DictReader(b.data.open(mode='r'))
+        file = pd.read_csv(b.data.url,header=None)
 
-        base_keywords = [(line['phrase'],float(line['score'])) for line in csv_file]
+        csv_file = file.to_dict(orient="records")
+
+        base_keywords = [(line[0],float(line[1])) for line in csv_file]
         text_keywords=execute_rake(text)
 
         sim=getSimilarity(dict(base_keywords),dict(text_keywords))
