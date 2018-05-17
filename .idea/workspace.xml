@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09b37b4a-fbfd-418c-9b1d-a567fbe1cc1b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/testApp/migrations/0005_auto_20180518_0047.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/testApp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/urls.py" afterDir="false" />
     </list>
@@ -71,8 +74,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testProject/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="129" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="189">
+              <caret line="149" column="38" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
               <folding>
                 <element signature="e#312#321#0" expanded="true" />
                 <element signature="e#909#1134#0" />
@@ -88,8 +91,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="27" column="89" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="89" />
+            <state relative-caret-position="172">
+              <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="27" selection-end-column="92" />
               <folding>
                 <element signature="e#635#667#0" expanded="true" />
               </folding>
@@ -126,8 +129,10 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testApp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            <state>
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,9 +180,9 @@
         <option value="$PROJECT_DIR$/templates/input.html" />
         <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/templates/result.html" />
-        <option value="$PROJECT_DIR$/testApp/models.py" />
         <option value="$PROJECT_DIR$/testProject/storage_backends.py" />
         <option value="$PROJECT_DIR$/testProject/urls.py" />
+        <option value="$PROJECT_DIR$/testApp/models.py" />
         <option value="$PROJECT_DIR$/testProject/settings.py" />
       </list>
     </option>
@@ -409,8 +414,8 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20172009" />
-      <window_info anchor="bottom" id="manage.py@testProject" order="7" weight="0.4173765" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20172009" />
+      <window_info active="true" anchor="bottom" id="manage.py@testProject" order="7" visible="true" weight="0.4173765" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -834,13 +839,6 @@
     <entry file="file://$PROJECT_DIR$/templates/model_form_upload.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testApp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testProject/storage_backends.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -870,18 +868,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testProject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="27" column="89" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="89" />
+        <state relative-caret-position="172">
+          <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="27" selection-end-column="92" />
           <folding>
             <element signature="e#635#667#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="189">
+          <caret line="149" column="38" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
           <folding>
             <element signature="e#312#321#0" expanded="true" />
             <element signature="e#909#1134#0" />

@@ -16,7 +16,7 @@ class Topics(models.Model):
     cutoff_25 = models.FloatField()
     cutoff_50 = models.FloatField()
     cutoff_75  = models.FloatField()
-    data = models.FileField(storage=OverwriteStorage())
+    data = models.FileField()
 
     def __unicode__(self):
         return self.topic
