@@ -14,6 +14,9 @@ import os
 
 import dj_database_url
 
+AWS_ACCESS_KEY_ID = 'AKIAIZ2KV7YBQLZOGOHQ'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'documenttagging'
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -124,13 +127,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_DIR = os.path.join(BASE_DIR, 'media/uploads')
+#MEDIA_URL = '/media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#MEDIA_DIR = os.path.join(BASE_DIR, 'media/uploads')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
@@ -140,4 +143,10 @@ STATICFILES_DIRS = (
 )
 
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+DEFAULT_FILE_STORAGE = 'testProject.storage_backends.MediaStorage'
+
+STATIC_URL = 'http://documenttagging.s3.amazonaws.com/'
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
