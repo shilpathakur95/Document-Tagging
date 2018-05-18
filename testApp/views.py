@@ -86,7 +86,7 @@ def enter_text(request):
         input_instance.prediction_machine_version=1.0
         input_instance.prediction_machine_deploy_date='2018-04-24'
         input_instance.save()
-        return HttpResponse(template2.render(context={'list': result , 'keywords': keywords},
+        return HttpResponse(template2.render(context={'list': result , 'keywords': keywords,'topic':topic},
                                          request=request))
     else:
         input_form=InputForm()

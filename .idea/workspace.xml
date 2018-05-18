@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09b37b4a-fbfd-418c-9b1d-a567fbe1cc1b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testApp/processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testApp/processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testApp/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +39,11 @@
       <file leaf-file-name="result.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="189">
+              <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +110,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="223">
+              <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
                 <element signature="e#1100#1409#0" />
@@ -170,7 +173,6 @@
         <option value="$PROJECT_DIR$/testApp/classviews.py" />
         <option value="$PROJECT_DIR$/templates/testApp/topics_form.html" />
         <option value="$PROJECT_DIR$/testApp/urls.py" />
-        <option value="$PROJECT_DIR$/testApp/views.py" />
         <option value="$PROJECT_DIR$/templates/input_list.html" />
         <option value="$PROJECT_DIR$/templates/input.html" />
         <option value="$PROJECT_DIR$/templates/list.html" />
@@ -179,6 +181,7 @@
         <option value="$PROJECT_DIR$/testApp/models.py" />
         <option value="$PROJECT_DIR$/testProject/settings.py" />
         <option value="$PROJECT_DIR$/testApp/processing.py" />
+        <option value="$PROJECT_DIR$/testApp/views.py" />
         <option value="$PROJECT_DIR$/templates/result.html" />
       </list>
     </option>
@@ -401,7 +404,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039095" side_tool="true" weight="0.32879046" />
@@ -410,8 +412,8 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32879046" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960908" weight="0.32879046" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20172009" />
-      <window_info anchor="bottom" id="manage.py@testProject" order="7" visible="true" weight="0.4173765" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20172009" />
+      <window_info active="true" anchor="bottom" id="manage.py@testProject" order="7" visible="true" weight="0.4173765" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -835,17 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testApp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#1100#1409#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testApp/processing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -878,10 +869,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#1100#1409#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="189">
+          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
